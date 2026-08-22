@@ -1,13 +1,13 @@
 CC = gcc
 
-all: main.o assignment_snq.o ../Stack_n_Queue/stack.o ../Stack_n_Queue/queue.o
-	$(CC) main.o assignment_snq.o ../Stack_n_Queue/stack.o ../Stack_n_Queue/queue.o -o main
+all: main.o customer_service.o ../Stack_n_Queue/stack.o ../Stack_n_Queue/queue.o
+	$(CC) main.o customer_service.o ../Stack_n_Queue/stack.o ../Stack_n_Queue/queue.o -o main
 
-main.o: main.c assignment_snq.h
+main.o: main.c customer_service.h
 	$(CC) -c main.c -o main.o
 
-assignment_snq.o: assignment_snq.c assignment_snq.h
-	$(CC) -c assignment_snq.c -o assignment_snq.o
+customer_service.o: customer_service.c customer_service.h
+	$(CC) -c customer_service.c -o customer_service.o
 
 ../Stack_n_Queue/stack.o: ../Stack_n_Queue/stack.c ../Stack_n_Queue/stack.h
 	$(CC) -c ../Stack_n_Queue/stack.c -o ../Stack_n_Queue/stack.o

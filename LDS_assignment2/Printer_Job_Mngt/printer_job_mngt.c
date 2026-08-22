@@ -1,9 +1,9 @@
-#include<stdlib.h>
 #include "printer_job_mngt.h"
 
 Queue print_new(){
     Queue que = Queue_new(50);
     Queue *curr = &que;
+    assert(curr!=NULL);
     return *curr;
 }
 

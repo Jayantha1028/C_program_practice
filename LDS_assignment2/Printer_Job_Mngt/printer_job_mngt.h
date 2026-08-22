@@ -1,6 +1,7 @@
 #ifndef _printer_job_mngt_h_
 #define _printer_job_mngt_h_
 #include<stdint.h>
+#include<stdlib.h>
 #include "../Stack_n_Queue/stack.h"
 #include "../Stack_n_Queue/queue.h"
 

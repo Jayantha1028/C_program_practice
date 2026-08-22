@@ -4,6 +4,9 @@
 #include "../Stack_n_Queue/stack.h"
 #include "../Stack_n_Queue/queue.h"
 #include <stdlib.h>
+#include <stdio.h>
+#include <assert.h>
+#include <string.h>
 
 
 #define MAX_SIZE 100
@@ -15,7 +18,7 @@ struct _customer_{
     char name[40];
 };
 
-void customer_add(int32_t id, const char name[], Queue *curr, QueueResult *mdata);
+void customer_register(const int32_t id, const char name[], Queue *curr, QueueResult *mdata);
 void customer_checkout(Queue *curr, QueueResult *mdata, Stack history, StackResult *res);
 void customer_undo(Stack history, StackResult *res, Queue *curr, QueueResult *mdata);
 void customer_served_display(Stack history);
